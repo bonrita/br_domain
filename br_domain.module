@@ -1,0 +1,24 @@
+<?php
+
+/**
+ * @file
+ * Contains br_domain.module..
+ */
+
+use Drupal\Core\Routing\RouteMatchInterface;
+
+/**
+ * Implements hook_help().
+ */
+function br_domain_help($route_name, RouteMatchInterface $route_match) {
+  switch ($route_name) {
+    // Main module help for the br_domain module.
+    case 'help.page.br_domain':
+      $output = '';
+      $output .= '<h3>' . t('About') . '</h3>';
+      $output .= '<p>' . t('Additions for the domain module. Might be comitted to domain.') . '</p>';
+      return $output;
+
+    default:
+  }
+}

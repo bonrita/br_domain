@@ -1,0 +1,7 @@
+name: Mediamonks domain
+type: module
+description: Additions for the domain module. Might be comitted to domain.
+core: 8.x
+package: Mediamonks
+dependencies:
+  - domain

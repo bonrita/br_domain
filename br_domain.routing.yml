@@ -1,0 +1,15 @@
+br_domain.negotiation_url_prefix:
+  path: '/admin/config/regional/language/detection/url_prefix'
+  defaults:
+    _form: 'Drupal\br_domain\Form\NegotiationUrlprefixForm'
+    _title: 'Prefix in URL language detection configuration'
+  requirements:
+    _permission: 'administer languages'
+
+br_domain.negotiation_url_domain:
+  path: '/admin/config/regional/language/detection/url_domain'
+  defaults:
+    _form: 'Drupal\br_domain\Form\NegotiationUrlDomainForm'
+    _title: 'URL language detection configuration'
+  requirements:
+    _permission: 'administer languages'
